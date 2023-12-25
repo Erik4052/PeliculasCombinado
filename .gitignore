@@ -1,0 +1,99 @@
+
+
+# Archivos de compilación y binarios de .NET
+bin/
+obj/
+lib/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.suo
+
+# Archivos de configuración de usuario de Visual Studio
+*.user
+*.userosscache
+*.sln.docstates
+
+# Carpetas de paquetes
+**/[Pp]ackages/
+**/[Pp]ackages.lock.json
+**/package-lock.json
+**/yarn.lock
+
+# VS Code
+.vscode/
+.vs/
+
+# Herramientas de rendimiento de Visual Studio
+**/[Pp]rofile/
+
+# Archivos de Respaldo de Visual Studio
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+
+# Archivos de Respaldo Generales
+*_ReSharper.*
+*ReSharper*/
+[Bb]uild[Ll]og.*
+
+# Archivos y carpetas relacionados con NuGet
+**/[Pp]roject.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Microsoft Azure Build Output
+csx/
+*.build.csdef
+
+# Microsoft Azure Emulator
+ecf/
+rcf/
+
+# Windows Store app package directories and files
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+_pkginfo.txt
+*.appx
+*.appxbundle
+
+# Visual Studio cache files
+*.[Cc]ache
+ClientBin/
+[Ss]tyle[Cc]op.*
+~$*
+
+# Archivos y carpetas generados por Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Node.js
+/node_modules
+/dist
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos del sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+
+#Angular
+.angular/

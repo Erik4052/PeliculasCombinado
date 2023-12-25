@@ -1,0 +1,20 @@
+<form (submit)="submitTheatersForm()" [formGroup]="theatersForm">
+
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input formControlName="name" matInput>
+    <mat-error *ngIf="name.invalid">Name is required</mat-error>
+  </mat-form-field>
+
+  <h4>Select the theather location on map</h4>
+
+  <div>
+    <app-map (coordenateSelected)="coordenateSelected($event)"></app-map>
+  </div>
+
+  <div>
+    <button mat-flat-button color="primary" [disabled]="theatersForm.invalid">Save Changes</button>
+    <button mat-stroked-button routerLink="/theaters">Cancel</button>
+  </div>
+
+</form>
