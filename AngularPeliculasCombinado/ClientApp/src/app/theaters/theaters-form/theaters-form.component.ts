@@ -15,11 +15,13 @@ export class TheatersFormComponent implements OnInit {
   constructor(private fb:FormBuilder) { }
 
   theatersForm!:FormGroup;
+  initialCoordenates: Coordenate[] = [];
   ngOnInit(): void {
 
     this._initTheathersForm()
     if(this.model !== undefined) {
       this.theatersForm.patchValue(this.model);
+    this.initialCoordenates.push({latitude: this.model.latitude, longitude: this.model.longitude});
     }
   }
 
@@ -37,7 +39,7 @@ export class TheatersFormComponent implements OnInit {
   }
 
   coordenateSelected(coordenateSelected : Coordenate) {
-    this.theatersForm.setValue(coordenateSelected);
+    this.theatersForm.patchValue(coordenateSelected);
   }
 
   get name() {

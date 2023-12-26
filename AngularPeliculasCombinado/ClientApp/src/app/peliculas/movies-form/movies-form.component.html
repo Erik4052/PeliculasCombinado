@@ -1,0 +1,33 @@
+<div>
+  <form [formGroup]="moviesForm" (submit)="saveChanges()">
+    <mat-form-field appearance="outline">
+      <mat-label>title</mat-label>
+      <input matInput formControlName="title" placeholder="title">
+    </mat-form-field>
+
+    <mat-checkbox formControlName="inTheaters" class="checkbox-container">In Theaters</mat-checkbox>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Trailer</mat-label>
+      <input matInput formControlName="trailer" placeholder="trailer">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Release Date</mat-label>
+      <input matInput [matDatepicker]="releaseDate" formControlName="releaseDate" placeholder="releaseDate">
+      <mat-datepicker-toggle matSuffix [for]="releaseDate"></mat-datepicker-toggle>
+      <mat-datepicker #releaseDate></mat-datepicker>
+    </mat-form-field>
+
+    <app-input-img></app-input-img>
+
+    <h4>Theater summary</h4>
+
+    <app-input-markdown></app-input-markdown>
+    <div>
+      <button mat-flat-button color="primary" [disabled]="moviesForm.invalid">Save Changes</button>
+      <a mat-stroked-button routerLink="">Cancel</a>
+    </div>
+
+  </form>
+</div>

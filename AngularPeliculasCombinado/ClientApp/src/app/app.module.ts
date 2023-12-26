@@ -32,6 +32,7 @@ import { InputImgComponent } from './utilidades/input-img/input-img.component';
 import { InputMarkdownComponent } from './utilidades/input-markdown/input-markdown.component';
 import { TheatersFormComponent } from './theaters/theaters-form/theaters-form.component';
 import { MapComponent } from './utilidades/map/map.component';
+import { MoviesFormComponent } from './peliculas/movies-form/movies-form.component';
 
 const routes: Routes = [
   {path: '', component:LandingPageComponent},
@@ -82,7 +83,8 @@ const routes: Routes = [
     InputImgComponent,
     InputMarkdownComponent,
     TheatersFormComponent,
-    MapComponent
+    MapComponent,
+    MoviesFormComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

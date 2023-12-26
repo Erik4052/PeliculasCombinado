@@ -7,7 +7,7 @@ import { theaterCreationDTO, theaterDTO } from '../../models/theater';
   styleUrls: ['./edit-theaters.component.css']
 })
 export class EditTheatersComponent implements OnInit {
-  model:theaterDTO = {name: 'Sambil'}
+  model:theaterDTO = {name: 'Sambil', latitude: 18.977331630814813, longitude: -99.12723541259767}
   constructor() { }
 
   ngOnInit(): void {
